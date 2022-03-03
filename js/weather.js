@@ -17,7 +17,8 @@ function onGeoOk(position){
         temp.innerText = `${data.main.temp}°C`;
         weather.innerText = data.weather[0].main;
         city.innerText = data.name;
-                
+        
+        console("hello");
     })
 }
 
