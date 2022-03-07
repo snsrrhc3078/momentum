@@ -1,3 +1,27 @@
 .hidden {
     display: none;
 }
+
+* {
+    box-sizing: border-box;
+  }
+
+  #weather-icon{
+    width: 45px;
+    height: 45px;
+  }
+  
+
+  #weather-condition{
+    background-color: #080808;
+    width:max-content;
+    padding-right: 10px;
+    border-radius: 8px;
+  }
+  #weather-condition *{
+    vertical-align: middle;
+    align-items: center;
+    color: white;
+  }
+
+
