@@ -35,8 +35,13 @@ body{
   justify-content: space-evenly;
 }
 
+<<<<<<< HEAD
 #clock{
   margin-right: 10px;
+=======
+#clock, #greeting{
+  margin-right: 30px;
+>>>>>>> dd9e4f972666a7d78622bf7441921422da9ce424
 }
 
 #login-form input{
