@@ -80,3 +80,7 @@ li{
   height: 100%;
   z-index: -1;
 }
+
+#quote span{
+  word-break: keep-all;
+}
