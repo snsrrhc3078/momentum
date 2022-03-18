@@ -8,7 +8,7 @@ function onGeoOk(position) {
     const lat = position.coords.latitude;
     const long = position.coords.longitude;
 
-    const url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${API_KEY}&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${API_KEY}&units=metric`;
     fetch(url).then(response => response.json()).then(data => {
 
 
@@ -18,7 +18,7 @@ function onGeoOk(position) {
         const location = document.querySelector("#weather-condition span:nth-child(4)");
 
 
-        icon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+        icon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
         weather.innerText = data.weather[0].description;
         temp.innerText = `${data.main.temp}°C`;
         location.innerText = data.name;
